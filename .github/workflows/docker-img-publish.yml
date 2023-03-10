@@ -33,6 +33,7 @@ jobs:
           pytest
 
   build-and-push-image:
+    needs: build
     runs-on: ubuntu-latest
     permissions:
       contents: read
