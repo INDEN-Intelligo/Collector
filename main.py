@@ -5,7 +5,6 @@ import requests
 app = Flask(__name__)
 app.json_encoder = LazyJSONEncoder
 
-
 @app.route("/")
 def hello_world():
     return "<h1>Hello: World</h1>"
@@ -22,4 +21,4 @@ def sendRequest(url):
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(port=5001)
