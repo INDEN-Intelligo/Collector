@@ -3,7 +3,7 @@ from flasgger import LazyJSONEncoder
 import requests
 
 app = Flask(__name__)
-#app.json_encoder = LazyJSONEncoder
+app.json_encoder = LazyJSONEncoder
 
 
 @app.route("/")
