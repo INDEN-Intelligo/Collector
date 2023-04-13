@@ -1,8 +1,8 @@
-FROM python:latest
+FROM python:3.9
 
 WORKDIR /usr/app/src
 COPY ./ ./
 
 RUN pip install -r requirements.txt
 
-CMD [ "python", "launcher/main.py"]
+CMD [ "python", "main.py"]
