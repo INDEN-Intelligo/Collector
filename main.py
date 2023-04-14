@@ -1,9 +1,13 @@
 from flask import Flask
 from flasgger import LazyJSONEncoder
+from flask_cors import CORS
 import requests
 
 app = Flask(__name__)
 app.json_encoder = LazyJSONEncoder
+
+
+CORS(app)
 
 @app.route("/")
 def hello_world():
