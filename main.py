@@ -15,7 +15,7 @@ def hello_world():
 
 @app.route("/Stop/<id>")
 def Stop(id):
-    url = f'https://data.explore.star.fr/api/records/1.0/search/?dataset=tco-bus-circulation-passages-tr&q=&rows=100&sort=-idarret&facet=Point+d%27arr%C3%AAt&refine.Point+d%27arr%C3%AAt={id}'
+    url = f'https://data.explore.star.fr//api/records/1.0/search/?dataset=tco-bus-circulation-passages-tr&q=&rows=1000&facet=idligne&facet=nomcourtligne&facet=sens&facet=destination&facet=idarret&facet=precision&facet=visibilite&refine.idarret={id}'
     return sendRequest(url)
 
 
