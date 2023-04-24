@@ -4,7 +4,6 @@ from flask_cors import CORS
 import requests
 
 app = Flask(__name__)
-app.json_encoder = LazyJSONEncoder
 
 
 CORS(app)
